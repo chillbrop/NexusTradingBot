@@ -1,0 +1,38 @@
+# NexusTrade — Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core async runtime
+asyncio-throttle==1.0.2
+
+# WebSocket client
+websockets==12.0
+
+# HTTP client (for notifications)
+aiohttp==3.9.5
+
+# FastAPI backend + ASGI server
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+pydantic==2.7.0
+
+# Data processing
+numpy==1.26.4
+
+# Machine learning (optional but recommended)
+scikit-learn==1.4.2
+
+# Database
+# SQLite is built-in (Python stdlib)
+# Uncomment for PostgreSQL:
+# asyncpg==0.29.0
+# sqlalchemy[asyncio]==2.0.30
+
+# Environment variables
+python-dotenv==1.0.1
+
+# Optional: Lightweight charting data export
+pandas==2.2.2
+
+# Development / testing
+pytest==8.2.0
+pytest-asyncio==0.23.6

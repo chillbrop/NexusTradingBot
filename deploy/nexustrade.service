@@ -1,0 +1,15 @@
+[Unit]
+Description=NexusTrade AI Trading Bot
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/opt/nexustrade
+EnvironmentFile=/opt/nexustrade/.env
+ExecStart=/opt/nexustrade/venv/bin/uvicorn api.server:app --host 0.0.0.0 --port 8000
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
